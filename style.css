@@ -1,87 +1,190 @@
-/* CSS Document */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-	
+body{
+    background-color: #30292f;
+    animation: background 20s ease-in-out infinite;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
-	
-}
-
-
-
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-	
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+#toplogo{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    width: inherit;
+    height: inherit;
 }
 
 #logo {
-	width:30%;
-	height:30%;
-	margin-bottom:150px;
+	width: 20%;
+    height: 20%;
 	display:block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	
 }
+
+@keyframes background {
+    0% { background-color: #0E1014; }
+    5% { background-color: #0E1014; }
+    25% { background-color: #161616; }
+    30% { background-color: #161616; }
+    50% { background-color: #141011; }
+    55% { background-color: #141011; }
+    75% { background-color: #131413;}
+    80% { background-color: #131413; }
+    100% { background-color: #0E1014; }
+}
+
+@keyframes logo-rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#logo{
+    animation: logo-rotation 5s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/*navbar settings*/
+
+#navbar
+{
+	margin: 0 auto;
+    width: 50%;
+    padding-bottom: 130px;
+}
+
+#navbar ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+}
+
+#navbar ul a
+{
+    color: #30292f;
+	display:block;
+	text-decoration:none;
+	font-weight:700;
+	font-size:16px;
+	line-height:70px;
+	padding-left: 30px;
+    padding-right: 30px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#navbar ul li
+{
+	position:relative;
+	float:left;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li a:hover
+{
+	background-color: dimgray;
+    color: white;
+}
+#navbar ul li a:active{
+    background-color: white;
+    color: black;
+}
+
+#navbar ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	padding:0;
+    color: 
+}
+
+#navbar ul ul li
+{
+	float:none;
+	width:200px;
+    height: 70px;
+}
+
+#navbar ul ul a
+{
+	line-height:120%;
+	padding:10px 15px;
+    color: gray;
+}
+
+#navbar ul ul ul
+{
+	top:0;
+	left:100%;
+}
+
+#navbar ul li:hover > ul
+{
+	display:block;
+}
+
+li{
+    background-color: whitesmoke;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+/*end of navbar settings*/
+
+
+h1{
+    font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+    
+}
+
+h2{
+    text-align: center;
+    font-size: 60px;
+    color: #D9D0DE;
+}
+
+
+/*background color change rules*/
+
+
+#logo-button:hover ~ #wrapper{
+    background: red;
+}
+
+
+/*end of background color change rules*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 #brand {
 	width:30px;
@@ -311,3 +414,5 @@ ul {
     max-width: 100%;
 
 }
+
+*/
