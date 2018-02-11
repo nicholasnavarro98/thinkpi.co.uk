@@ -60,6 +60,7 @@ body{
     padding-bottom: 130px;
     width: 50%;
     margin: 0 auto;
+    display: inline-block;
 }
 
 #navbar ul
@@ -67,7 +68,6 @@ body{
 	list-style:none;
 	position:absolute;
 	float:left;
-    margin: 0 auto;
     padding: 0;
     text-align: center;
 }
@@ -109,13 +109,12 @@ body{
 	top:100%;
 	left:0;
 	padding:0;
-    color: 
 }
 
 #navbar ul ul li
 {
 	float:none;
-	width:120px;
+	width:200px;
     height: 70px;
 }
 
@@ -123,7 +122,7 @@ body{
 {
     line-height: 120%;
 	padding:10px 15px;
-    color: gray;
+    color: black;
 }
 
 #navbar ul ul ul
