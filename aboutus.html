@@ -11,28 +11,48 @@
     <script src="script.js"></script>
 </head>
 <body>
-<header class="mainheader">
+<div id="wrapper">
+    <header>
+        <div id="toplogo"><a href="index.html"><img id="logo" src="logopng/5white.png"></a></div>
 
-    <div id="toplogo"><img id="logo" src="logopng/5.jpg" width="100" /></div>
+        <center>
 
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="aboutus.html">About Us</a>
-        <div class="dropdown">
-            <button class="dropbtn">What We Do
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="logodesign.html">Logo Design & Branding</a>
-                <a href="#">Website Design</a>
-                <a href="#">eCommerce Website Design</a>
-                <a href="#">Social Media Solutions</a>
-            </div>
-        </div>
-        <a href="#aboutus">Portfolio</a>
-        <a href="#aboutus">Contact Us</a>
-    </div>
+            <nav id="navbar">
 
+                <ul>
+
+
+                    <li><a href="index.html">Home</a></li>
+
+
+
+                    <li><a href="aboutus.html">About Us</a></li>
+
+
+
+                    <li><a href="#" id="dropdown">Products and Services</a>
+                        <ul id="dropdown-content">
+                            <li><a href="logodesign.html" class="navbar-button" id="logo-button">Logo Design & Branding</a></li>
+                            <li><a href="websitedesign.html" class="navbar-button" id="website-button">Website Design</a></li>
+                            <li><a href="#" class="navbar-button" id="ecommerce-button">eCommerce Website Design</a></li>
+                            <li><a href="#" class="navbar-button" id="social-button">Social Media Solutions</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#aboutus">Portfolio</a></li>
+
+
+                    <li><a href="#aboutus">Contact Us</a></li>
+
+
+
+                </ul>
+
+            </nav>
+        </center>
+
+    </header>
 <div id="aboutImage">
     <img id="AboutUsImg" src="images/aboutusbanner.png" alt="About Us"/>
 
