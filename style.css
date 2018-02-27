@@ -1,7 +1,5 @@
 body{
     animation: background 20s ease-in-out infinite;
-    /*transform: scale(0.9);
-    transform-origin: 0 0;*/
 }
 
 #wrapper{
