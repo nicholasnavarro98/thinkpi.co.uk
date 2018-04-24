@@ -1,0 +1,97 @@
+body{
+    animation: background 20s ease-in-out infinite;
+    /*transform: scale(0.9);
+    transform-origin: 0 0;*/
+}
+
+#wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#toplogo{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    width: inherit;
+    height: inherit;
+}
+
+#logo {
+	width: 20%;
+    height: 20%;
+	display:block;
+	margin: 0 auto;
+    animation: logo-rotation 5s infinite;
+    animation-timing-function: ease-in-out;
+	
+}
+
+@keyframes background {
+    0% { background-color: #3B413C; }
+    5% { background-color: #3B413C; }
+    25% { background-color: #315E6B; }
+    30% { background-color: #315E6B; }
+    50% { background-color: #172121; }
+    55% { background-color: #172121; }
+    75% { background-color: #3B100F;}
+    80% { background-color: #3B100F; }
+    100% { background-color: #3B413C; }
+}
+
+@keyframes logo-rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+header{
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav{
+    width: 100%;
+    position: relative;
+}
+nav ul{
+	list-style:none;
+    
+}
+nav ul li{
+    background-color: whitesmoke;
+    width: 280px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+nav ul li a{
+    color: #30292f;
+	text-decoration: none;
+	font-size: 20px;
+    line-height: 100px;
+}
+
+h1{
+    font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+   text-align: center;
+    
+}
+
+h2{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
